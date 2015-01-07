@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 // counter starts at 0
 Session.setDefault('counter', 0);
 
