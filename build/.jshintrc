@@ -109,6 +109,7 @@
       "Assets": false,
       "Handlebars": false,      // https://github.com/meteor/meteor/wiki/Handlebars
       "Package": false,
+      "App": false, //mobile-config.js
 
       // Meteor internals
       "DDPServer": false,
