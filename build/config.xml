@@ -29,7 +29,7 @@
     <builders>
         <hudson.tasks.Shell>
             <command>echo &apos;Executing JSHINT from shell&apos;
-                jshint `pwd`/app/ --config build/.jshintrc --exclude app/tests/**/*.js --reporter=&quot;checkstyle&quot; &gt; build/jshint.xml || true</command>
+                jshint `pwd`/app/ --config build/.jshintrc --exclude app/tests/**/*.js --reporter=&quot;jslint&quot; &gt; build/jshint.xml || true</command>
         </hudson.tasks.Shell>
         <hudson.tasks.Shell>
             <command>echo &apos;Executing JSCodeSniffer from shell&apos;
@@ -56,7 +56,7 @@
                             <max>999</max>
                             <unstable>999</unstable>
                             <usePattern>false</usePattern>
-                            <pattern>build/jshint.xml</pattern>
+                            <pattern>build/jscs.xml</pattern>
                         </hudson.plugins.violations.TypeConfig>
                     </entry>
                     <entry>
@@ -155,7 +155,7 @@
                             <max>999</max>
                             <unstable>999</unstable>
                             <usePattern>false</usePattern>
-                            <pattern></pattern>
+                            <pattern>build/jshint.xml</pattern>
                         </hudson.plugins.violations.TypeConfig>
                     </entry>
                     <entry>
