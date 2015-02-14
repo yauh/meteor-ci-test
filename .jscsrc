@@ -1,4 +1,12 @@
 {
+  "plugins": [
+    "jscs-jsdoc"
+  ],
+  "jsDoc": {
+    "checkAnnotations": "closurecompiler",
+    "checkTypes": "strictNativeCase",
+    "enforceExistence": "exceptExports"
+  },
   "requireCurlyBraces": [
     "if",
     "else",
