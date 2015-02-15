@@ -1,12 +1,12 @@
-//.jshintrc
+//.eslintrc
 {
-    // JSHint Meteor Configuration File
+    // ESLint Meteor Configuration File
     // Match the Meteor Style Guide
     //
     // By @raix with contributions from @aldeed and @awatson1978
     // Source https://github.com/raix/Meteor-jshintrc
     //
-    // See http://jshint.com/docs/ for more details
+    // See http://eslint.org/docs/ for more details
 
     "maxerr"        : 50,       // {int} Maximum error before stopping
 

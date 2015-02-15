@@ -9,7 +9,7 @@
  //   "checkTypes": "strictNativeCase",
  //   "enforceExistence": "exceptExports"
  // },
-  "validateIndentation": 4,
+  "validateIndentation": 2,
   "disallowTrailingWhitespace": true,
   "disallowTrailingComma": true,
   "disallowNewlineBeforeBlockStatements": true,
