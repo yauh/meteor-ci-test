@@ -1,2 +1,2 @@
-app/.meteor
-app/client/lib/jquery.touchwipe.js
+app/.meteor/**
+**/lib/jquery.touchwipe.js
