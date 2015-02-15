@@ -28,12 +28,12 @@
     <concurrentBuild>false</concurrentBuild>
     <builders>
         <hudson.tasks.Shell>
-            <command>echo &apos;Executing JSHINT from shell&apos;
-                jshint $WORKSPACE/app/ $WORKSPACE/.jshintrc --exclude $WORKSPACE/app/tests/**/*.js --reporter=&quot;jslint&quot; &gt; $WORKSPACE/app/jshint.xml || true</command>
+            <command>echo &apos;Executing ESLint from shell&apos;
+                eslint $WORKSPACE/app/ --config=$WORKSPACE/.eslintrc --format=&quot;jslint-xml&quot; &gt; $WORKSPACE/build/eslint.xml || true</command>
         </hudson.tasks.Shell>
         <hudson.tasks.Shell>
             <command>echo &apos;Executing JSCodeSniffer from shell&apos;
-                jscs $WORKSPACE/app/ --config=$WORKSPACE/.jscsrc --reporter=checkstyle &gt; $WORKSPACE/app/jscs.xml || true</command>
+                jscs $WORKSPACE/app/ --config=$WORKSPACE/.jscsrc --reporter=checkstyle &gt; $WORKSPACE/build/jscs.xml || true</command>
         </hudson.tasks.Shell>
         <hudson.plugins.sonar.SonarRunnerBuilder plugin="sonar@2.1">
             <project>build/sonar-project.properties</project>
@@ -155,7 +155,7 @@
                             <max>999</max>
                             <unstable>999</unstable>
                             <usePattern>false</usePattern>
-                            <pattern>build/jshint.xml</pattern>
+                            <pattern>build/eslint.xml</pattern>
                         </hudson.plugins.violations.TypeConfig>
                     </entry>
                     <entry>
