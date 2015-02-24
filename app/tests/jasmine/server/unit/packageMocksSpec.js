@@ -13783,14 +13783,14 @@ var globalContext = (typeof global !== 'undefined') ? global : window
 var originalContext = []
 
 /*
-originalContext = [
-  {
-    context: window,
-    propertyName: 'Meteor',
-    value: {}
-  }
-]
-*/
+ originalContext = [
+ {
+ context: window,
+ propertyName: 'Meteor',
+ value: {}
+ }
+ ]
+ */
 
 function _saveOriginal(context, propertyName) {
   originalContext.push({
