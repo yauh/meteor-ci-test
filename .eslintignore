@@ -1,2 +1,3 @@
 app/.meteor/**
 **/lib/jquery.touchwipe.js
+app/packages/tests-proxy**

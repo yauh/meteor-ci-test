@@ -1,7 +1,7 @@
 //.jscsrc
 // tested with jscs v1.11.3
 {
-  "excludeFiles": [".meteor/**"],
+  "excludeFiles": [".meteor/**", "**/lib/jquery.touchwipe.js", "app/packages/tests-proxy**"],
   //"disallowAnonymousFunctions": true,               // Requires that a function expression be named.
   //"disallowCapitalizedComments": true,              // Requires the first alphabetical character of a comment to be lowercase.
   //"disallowCommaBeforeLineBreak": true,             // Disallows commas as last token on a line in lists.
