@@ -1,4 +1,4 @@
-Meteor.publish('publicLists', function() {
+Meteor.publish('publicLists', function () {
   return Lists.find({
     userId: {
       $exists: false
@@ -6,7 +6,7 @@ Meteor.publish('publicLists', function() {
   });
 });
 
-Meteor.publish('privateLists', function() {
+Meteor.publish('privateLists', function () {
   if (this.userId) {
     return Lists.find({
       userId: this.userId
@@ -16,7 +16,7 @@ Meteor.publish('privateLists', function() {
   }
 });
 
-Meteor.publish('todos', function(listId) {
+Meteor.publish('todos', function (listId) {
   check(listId, String);
 
   return Todos.find({

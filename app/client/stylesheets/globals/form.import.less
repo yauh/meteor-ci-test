@@ -17,7 +17,9 @@ textarea {
   color: @color-full;
   outline: none;
 
-  &[disabled] { opacity: .5; }
+  &[disabled] {
+    opacity: .5;
+  }
 }
 
 // Remove chrome/saf autofill yellow background
@@ -52,18 +54,18 @@ input:-webkit-autofill {
 
       // Icon family from icon.lessimport
       font-family: 'todos';
-    	speak: none;
-    	font-style: normal;
-    	font-weight: normal;
-    	font-variant: normal;
-    	text-transform: none;
-    	line-height: 1;
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
 
-    	// Better Font Rendering
-    	-webkit-font-smoothing: antialiased;
-    	-moz-osx-font-smoothing: grayscale;
+      // Better Font Rendering
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
 
-    	// Checkmark icon
+      // Checkmark icon
       content: "\e612";
     }
   }
@@ -85,7 +87,9 @@ input:-webkit-autofill {
     left: 1em;
   }
 
-  input { padding-left: 3em; }
+  input {
+    padding-left: 3em;
+  }
 
   // Styling
   input {
@@ -101,8 +105,8 @@ input:-webkit-autofill {
 
   [class^="icon-"],
   [class*=" icon-"] {
-    .transition( all 300ms ease-in );
-    .transform(translate3d(0,-50%,0));
+    .transition(all 300ms ease-in);
+    .transform(translate3d(0, -50%, 0));
     background: transparent;
     color: @color-medium;
     font-size: 1em;
